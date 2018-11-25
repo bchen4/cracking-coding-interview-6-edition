@@ -20,6 +20,7 @@ class TestArrayAndString(unittest.TestCase):
 
     def test_urlify(self):
         self.assertEqual(aas.urlify("This is an apple       ", 16), "This%20is%20an%20apple")
+        self.assertEqual(aas.urlify("This",4), "This")
 
 
 if __name__ == '__main__':
